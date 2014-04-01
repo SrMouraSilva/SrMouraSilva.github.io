@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>SrMouraSilva's page</title>
+    <link rel="stylesheet" href="stylesheets/monokai_sublime.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -14,80 +16,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
+
   <body>
-
-      <header>
-        <h1>SrMouraSilva.github.io</h1>
-        <p>A listing of open source efforts at SrMouraSilva on GitHub  http://SrMouraSilva.github.io/</p>
+      <header id="title">
+          <h1>SrMouraSilva.github.io</h1>
+          <p>A listing of open source efforts at SrMouraSilva on GitHub  http://SrMouraSilva.github.io/</p>
       </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/SrMouraSilva" class="button fork"><strong>View On GitHub</strong></a>
-      </div><!-- end banner -->
 
     <div class="wrapper">
       <nav>
+        <h2 class="sr-only">Projects</h2>
         <ul>
-          <li></li>MenuPy-Terminal - A creator of menus for terminals with customization options</li>
+          <!--
+          <li class="selected" data-id="menuPy">
+            <h3><a href="https://github.com/SrMouraSilva/MenuPy-Terminal">MenuPy-Terminal</a></h3>
+            A creator of menus for terminals with customization options
+          </li>
+
+          <li data-id="yugioh">
+            <h3><a href="https://github.com/SrMouraSilva/YuGiOhDuel">YuGiOhDuel</a></h3>
+            A accessible field duel with animations using current web technologies
+          </li>
+          <li data-id="rocksmith">
+            <h3><a href="https://github.com/SrMouraSilva/RockSmithCustomSongs">RockSmithCustomSongs</a></h3>
+            A concept website to share links CDLC songs for Rocksmith
+          </li>
+          <li data-id="aboutMe">
+            <h3><a href="http://srmourasilva.carbonmade.com/">About me</a></h3>
+            We are all evolving ;)
+          </li>
+          -->
         </ul>
       </nav>
-      <section>
-      
-        <h3>
-          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages">
-            <span class="octicon octicon-link"></span>
-          </a>
-          Welcome to GitHub Pages.
-        </h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<section>
+    <h2>Projects</h2>
+
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="menuPy">MenuPy-Terminal</h3>
+          <p>A creator of menus for terminals with customization options</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="" title="View on GitHub"></a>
+        <div>
+      </header>
+
+      <h4>Run it</h4>
+
+      <p>Create simple menus like this:</p>
+<pre><code class="python"># Package import
+from menuPy import MenuPy
+
+# Creatint a ney menu
+menupy = MenuPy("Menu Principal")
+
+# Add items
+menupy.addItem([], "Select me!", print, "Option one selected")
+menupy.addItem([], "No, me!", print, "Option two selected")
+
+# Run
+menupy.run()
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <img src="images/articles/1-console.png" alt="A console window, with texts colored. The output is bellow" />
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<pre><code class="python">******************************
+******* Menu Principal *******
+******************************
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+0 - Exit
+1 - Select me!
+2 - No, me!
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+Escolha uma opção: 
+</code></pre>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+    <h4>Characteristics</h4>
+    <ul>
+      <li>Multiplatform - Windows and Unix based systems </li>
+      <li>Easy to use</li>
+      <li>Exportable to XML (implementing)</li>
+      <li>Customizable visual</li>
+      <li>Handling errors (implementing)</li>
+      <li>Internationalization yet (<b>English</b> and Portuguese)</li>
+      <li>Customization: Colored Text</li>
+    </ul>
+  </article>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="yugioh">YuGiOhDuel</h3>
+          <p>A accessible field duel with animations using current web technologies</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="" title="View on GitHub"></a>
+        <div>
+      </header>
+    </article>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="rocksmith">RockSmithCustomSongs</h3>
+          <p>A concept website to share links CDLC songs for Rocksmith </p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/RockSmithCustomSongs" title="View on GitHub"></a>
+        <div>
+      </header>
+    </article>
+
+
+    <article>
+      <header>
+        <h3 id="aboutMe">About Me</h3>
+        <p>We are all evolving ;)</p>
+      </header>
+      <h4>Visit!</h4>
+      <ul>
+          <li><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8180267J9">Lattes</a></li>
+          <li><a href="http://srmourasilva.github.io/">GitHub</a></li>
+          <li><a href="http://srmourasilva.carbonmade.com/">Carbonmade</a></li>
+          <li><a href="https://www.facebook.com/paulomateusmoura">Facebook</a></li>
+          <li><a href="http://instagram.com/SrMouraSilva">Instagram</a></li>
+          <li><a href="http://www.youtube.com/SrMouraSilva">Youtube</a></li>
+          <li><a href="https://twitter.com/SrMouraSilva">Twitter</a></li>
+      </ul>
+    </article>
+</section>
+
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Original theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
 
-
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-44049595-1");
+      <script src="javascripts/highlight.pack.js"></script>
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-44049595-1");
             pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        } catch(err) {console.log(err)}
+      </script>
+      <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+      </script>
 
-  </body>
+    </body>
 </html>

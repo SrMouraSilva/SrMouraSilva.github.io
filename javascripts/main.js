@@ -13,20 +13,22 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(document).ready(function(){
-  $("section h1, section h2").each(function(){
-    $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
+  $("article h3").each(function(){
+    $("nav ul").append(
+      "<li><h3><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</h3></a>"+ $(this).parent().find("p")[0].innerHTML +"</li>"
+    );
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
-    $("nav ul li:first-child a").parent().addClass("active");
+    $("nav ul li:first-child a").parent().parent().addClass("active");
   });
-  
+
   $("nav ul li").on("click", "a", function(event) {
-    var position = $($(this).attr("href")).offset().top - 190;
+    var position = $($(this).attr("href")).offset().top - 120;
     $("html, body").animate({scrollTop: position}, 400);
-    $("nav ul li a").parent().removeClass("active");
-    $(this).parent().addClass("active");
+    $("nav ul li a").parent().parent().removeClass("active");
+    $(this).parent().parent().addClass("active");
     event.preventDefault();    
   });
-  
+
   sectionHeight();
   
   $('img').load(sectionHeight);

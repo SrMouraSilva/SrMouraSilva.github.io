@@ -502,6 +502,17 @@ table {
   border-spacing: 0;
 }
 
+
+/* =============================================================================
+   Meus estilos
+   ========================================================================== */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* =============================================================================
+   Styles - de veras
+   ========================================================================== */
+
+
 body {
   font: 14px/22px "Quattrocento Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #666;
@@ -546,6 +557,9 @@ a {
   color: #3399cc;
   font-weight: 400;
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 a small {
@@ -650,8 +664,8 @@ dt {
   font-weight: 700;
 }
 
-header {
-  padding: 25px 20px 40px 20px;
+header#title {
+  padding: 25px 20px 10px 20px;
   margin: 0;
   position: fixed;
   top: 0;
@@ -668,7 +682,7 @@ header {
   -webkit-font-smoothing: antialiased;
   min-height: 76px;
 }
-header h1 {
+header#title h1 {
   font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f3f3f3;
   text-shadow: 0px 2px 0px #235796;
@@ -679,123 +693,19 @@ header h1 {
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
 }
-header p {
+header#title p {
   color: #d8d8d8;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
   font-size: 18px;
   margin: 0px;
 }
 
-#banner {
-  z-index: 100;
-  left: 0;
-  right: 50%;
-  height: 50px;
-  margin-right: -382px;
-  position: fixed;
-  top: 115px;
-  background: #ffcc00;
-  border: 1px solid #f0b500;
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-border-radius: 0px 2px 2px 0px;
-  -webkit-border-radius: 0px 2px 2px 0px;
-  -o-border-radius: 0px 2px 2px 0px;
-  -ms-border-radius: 0px 2px 2px 0px;
-  -khtml-border-radius: 0px 2px 2px 0px;
-  border-radius: 0px 2px 2px 0px;
-  padding-right: 10px;
-}
-#banner .button {
-  border: 1px solid #dba500;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
-  background: -webkit-linear-gradient(#ffe788, #ffce38);
-  background: -moz-linear-gradient(#ffe788, #ffce38);
-  background: -o-linear-gradient(#ffe788, #ffce38);
-  background: -ms-linear-gradient(#ffe788, #ffce38);
-  background: linear-gradient(#ffe788, #ffce38);
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #FFE788;
-  margin-left: 5px;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  color: #333;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-}
-#banner .button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
-  background: -webkit-linear-gradient(#ffe788, #ffe788);
-  background: -moz-linear-gradient(#ffe788, #ffe788);
-  background: -o-linear-gradient(#ffe788, #ffe788);
-  background: -ms-linear-gradient(#ffe788, #ffe788);
-  background: linear-gradient(#ffe788, #ffe788);
-  background-color: #ffeca0;
-}
-#banner .fork {
-  position: fixed;
-  left: 50%;
-  margin-left: -325px;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  background-color: #FFE788;
-}
-#banner .downloads {
-  float: right;
-  margin: 0 45px 0 0;
-}
-#banner .downloads span {
-  float: left;
-  line-height: 52px;
-  font-size: 90%;
-  color: #9d7f0d;
-  text-transform: uppercase;
-  text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
-}
-#banner ul {
-  list-style: none;
-  height: 40px;
-  padding: 0;
-  float: left;
-  margin-left: 10px;
-}
-#banner ul li {
-  display: inline;
-}
-#banner ul li a.button {
-  background-color: #FFE788;
-}
-#banner #logo {
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  right: 7px;
-  top: 7px;
-  display: block;
-  background: url(../images/octocat-logo.png);
-}
 
 section {
   width: 590px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
-  margin-top: 190px;
+  margin-top: 130px;
   position: relative;
   background: #fbfbfb;
   -moz-border-radius: 3px;
@@ -816,17 +726,17 @@ small {
 }
 
 nav {
-  width: 230px;
+  width: 245px;
   position: fixed;
-  top: 220px;
+  /*top: 220px;*/
   left: 50%;
-  margin-left: -580px;
+  margin-left: -569px;
   text-align: right;
 }
 nav ul {
   list-style: none;
   list-style-image: none;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
 }
 nav ul li {
@@ -843,12 +753,69 @@ nav ul li.tag-h1 a {
 nav ul li.tag-h2 + .tag-h1 {
   margin-top: 10px;
 }
+/*
 nav ul a {
   color: #666;
 }
 nav ul a:hover {
   color: #999;
 }
+*/
+    nav a {
+        font-size: 15px;
+    }
+    nav h3 {
+        background-color: #E6E2CE;
+        margin-bottom: 5px;
+    }
+    nav li {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
+        border: 1px solid #CBCBCB;
+        border-top: 0; 
+        padding: 10px !important;
+        background-color: #EFECDC;
+        /*cursor: pointer;*/
+    }
+    nav li:hover {
+        background-color: #E6E2CE;
+    }
+    nav li:first-of-type {
+        border-top-left-radius: 3px;
+    }
+
+    nav .active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09), 0 0 2px 2px rgba(199, 195, 178, 0.8) inset;
+        background-color: #F5F1DB;
+    }
+    nav .active a {
+        text-decoration: underline;
+    }
+        nav li:hover h3 {
+            background-color: #EFECDC;
+        }
+
+article header {
+    background-color: #EFECDC;
+    margin: 0 -30px;
+    padding: 5px 30px 0 30px;
+    margin-bottom: 5px;
+}
+article header p {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+    article .logo {
+      margin-top: 10px;
+      float: right;
+      height: 36px;
+      width: 36px;
+      display: block;
+      background: url("../images/octocat-logo.png");
+      background-repeat: no-repeat;
+    }
+    article header a:hover {
+      background-color: #FFF;
+    }
 
 footer {
   width: 180px;
@@ -895,7 +862,7 @@ footer {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     padding: 20px auto;
-    margin: 190px auto 20px;
+    margin: 130px auto 20px;
     max-width: 600px;
   }
 
@@ -913,11 +880,11 @@ footer {
     word-wrap: break-word;
   }
 
-  header {
-    padding: 20px 20px;
+  header#title {
+    padding: 20px 20px 0 20px;
     margin: 0;
   }
-  header h1 {
+  header#title h1 {
     font-size: 32px;
     white-space: nowrap;
     overflow: hidden;
@@ -925,38 +892,27 @@ footer {
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
   }
-  header p {
+  header#title p {
     display: none;
   }
 
-  #banner {
-    top: 80px;
-  }
-  #banner .fork {
-    float: left;
-    display: inline-block;
-    margin-left: 0px;
-    position: fixed;
-    left: 20px;
-  }
-
   section {
-    margin-top: 130px;
+    margin-top: 110px;
     margin-bottom: 0px;
     width: auto;
   }
 
-  header ul, header p.view {
+  header#title ul, header p.view {
     position: static;
   }
 }
 @media print, screen and (max-width: 480px) {
-  header {
+  header#title {
     position: relative;
     padding: 5px 0px;
     min-height: 0px;
   }
-  header h1 {
+  header#title h1 {
     font-size: 24px;
     white-space: nowrap;
     overflow: hidden;
@@ -967,13 +923,15 @@ footer {
 
   section {
     margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #banner {
     display: none;
   }
 
-  header ul {
+  header#title ul {
     display: none;
   }
 }
