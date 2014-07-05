@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>SrMouraSilva's page</title>
-    <link rel="stylesheet" href="stylesheets/monokai_sublime.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/css.css">
+
+    <script src="javascripts/zepto-custom.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <meta property="og:url" content="http://srmourasilva.github.io/" />
+    <meta property="og:image" content="images/SrMouraSilva.jpg" />
+    <meta property="og:title" content="SrMouraSilva.github.io" />
+    <meta property="og:description" content="A listing of open source efforts at SrMouraSilva on GitHub http://SrMouraSilva.github.io/" />
   </head>
 
   <body>
@@ -27,25 +30,6 @@
       <nav>
         <h2 class="sr-only">Projects</h2>
         <ul>
-          <!--
-          <li class="selected" data-id="menuPy">
-            <h3><a href="https://github.com/SrMouraSilva/MenuPy-Terminal">MenuPy-Terminal</a></h3>
-            A creator of menus for terminals with customization options
-          </li>
-
-          <li data-id="yugioh">
-            <h3><a href="https://github.com/SrMouraSilva/YuGiOhDuel">YuGiOhDuel</a></h3>
-            A accessible field duel with animations using current web technologies
-          </li>
-          <li data-id="rocksmith">
-            <h3><a href="https://github.com/SrMouraSilva/RockSmithCustomSongs">RockSmithCustomSongs</a></h3>
-            A concept website to share links CDLC songs for Rocksmith
-          </li>
-          <li data-id="aboutMe">
-            <h3><a href="http://srmourasilva.carbonmade.com/">About me</a></h3>
-            We are all evolving ;)
-          </li>
-          -->
         </ul>
       </nav>
 
@@ -60,7 +44,7 @@
           <p>A creator of menus for terminals with customization options</p>
         </div>
         <div class="col-xs-2">
-          <a class="logo" href="" title="View on GitHub"></a>
+          <a class="logo" href="https://github.com/SrMouraSilva/MenuPy-Terminal" title="View on GitHub"></a>
         <div>
       </header>
 
@@ -107,6 +91,38 @@ Escolha uma opção:
   </article>
 
 
+<article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="GProject">GProject</h3>
+          <p>A simple viewer projects for your htdocs/www</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/GProjects" title="View on GitHub"></a>
+        <div>
+      </header>
+
+      <h4>How to use</h4>
+
+      <p>Enter in each folder one package.json with the project name and description</p>
+      <p>In your www/index.php file:</p>
+<pre><code class="html">&#60;!-- in head -->
+&#60;link href="GP_folder/static/css.css" rel="stylesheet">
+&#60;script src="GP_folder/static/js.js"></script>
+</code></pre>
+
+<pre><code class="php">&#60;?php
+    // In body 
+    include_once("GP_folder/GP.php");
+    $GP = new GP();
+    $GP->show();
+?>
+</code></pre>
+
+    <p>Tara!</p>
+    <img src="images/articles/2-GProject.png" alt="A panel of project cards" />
+  </article>
+
     <article>
       <header class="clearfix">
         <div class="col-xs-10">
@@ -114,7 +130,7 @@ Escolha uma opção:
           <p>A accessible field duel with animations using current web technologies</p>
         </div>
         <div class="col-xs-2">
-          <a class="logo" href="" title="View on GitHub"></a>
+          <a class="logo" href="https://github.com/SrMouraSilva/YuGiOhDuel" title="View on GitHub"></a>
         <div>
       </header>
     </article>

@@ -1,0 +1,6 @@
+    <link rel="stylesheet" href="stylesheets/monokai_sublime.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+Normalize não foi utilizado

@@ -1,17 +1,3 @@
-var sectionHeight = function() {
-  var total    = $(window).height(),
-      $section = $('section').css('height','auto');
-
-  if ($section.outerHeight(true) < total) {
-    var margin = $section.outerHeight(true) - $section.height();
-    $section.height(total - margin - 20);
-  } else {
-    $section.css('height','auto');
-  }
-}
-
-$(window).resize(sectionHeight);
-
 $(document).ready(function(){
   $("article h3").each(function(){
     $("nav ul").append(
@@ -22,16 +8,17 @@ $(document).ready(function(){
   });
 
   $("nav ul li").on("click", "a", function(event) {
-    var position = $($(this).attr("href")).offset().top - 120;
-    $("html, body").animate({scrollTop: position}, 400);
-    $("nav ul li a").parent().parent().removeClass("active");
-    $(this).parent().parent().addClass("active");
-    event.preventDefault();    
-  });
+    var target = event.currentTarget.hash;
+    window.history.pushState({}, "", target);
 
-  sectionHeight();
-  
-  $('img').load(sectionHeight);
+    var position = $(target).offset().top - 120;
+    console.log(position);
+    window.scrollTo(0, position);
+
+    $("nav ul li").removeClass("active");
+    $(this).parent().parent().addClass("active");
+    event.preventDefault();
+  });
 });
 
 fixScale = function(doc) {
