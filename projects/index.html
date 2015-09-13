@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SrMouraSilva's page</title>
+
+    <link rel="stylesheet" href="stylesheets/css.css">
+
+    <script src="javascripts/zepto-custom.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta property="og:url" content="http://srmourasilva.github.io/" />
+    <meta property="og:image" content="http://SrMouraSilva.github.io/images/SrMouraSilva.jpg" />
+    <meta property="og:title" content="SrMouraSilva's page" />
+    <meta property="og:description" content="A listing of open source efforts at SrMouraSilva on GitHub http://SrMouraSilva.github.io/" />
+  </head>
+
+  <body>
+      <header id="title">
+          <h1>SrMouraSilva.github.io</h1>
+          <p>A listing of open source efforts at SrMouraSilva on GitHub  http://SrMouraSilva.github.io/</p>
+      </header>
+
+    <div class="wrapper">
+      <nav>
+        <h2 class="sr-only">Projects</h2>
+        <ul>
+        </ul>
+      </nav>
+
+
+<section>
+    <h2>Projects</h2>
+
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="menuPy">MenuPy-Terminal</h3>
+          <p>A creator of menus for terminals with customization options</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/MenuPy-Terminal" title="View on GitHub"></a>
+        <div>
+      </header>
+
+      <h4>Run it</h4>
+
+      <p>Create simple menus like this:</p>
+<pre><code class="python"># Package import
+from menuPy import MenuPy
+
+# Creatint a ney menu
+menupy = MenuPy("Menu Principal")
+
+# Add items
+menupy.addItem([], "Select me!", print, "Option one selected")
+menupy.addItem([], "No, me!", print, "Option two selected")
+
+# Run
+menupy.run()
+</code></pre>
+
+    <img src="images/articles/1-console.png" alt="A console window, with texts colored. The output is bellow" />
+
+<pre><code class="python">******************************
+******* Menu Principal *******
+******************************
+
+0 - Exit
+1 - Select me!
+2 - No, me!
+
+Escolha uma opção: 
+</code></pre>
+
+    <h4>Characteristics</h4>
+    <ul>
+      <li>Multiplatform - Windows and Unix based systems </li>
+      <li>Easy to use</li>
+      <li>Exportable to XML (implementing)</li>
+      <li>Customizable visual</li>
+      <li>Handling errors (implementing)</li>
+      <li>Internationalization yet (<b>English</b> and Portuguese)</li>
+      <li>Customization: Colored Text</li>
+    </ul>
+  </article>
+
+
+<article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="GProject">GProject</h3>
+          <p>A simple viewer projects for your htdocs/www</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/GProjects" title="View on GitHub"></a>
+        <div>
+      </header>
+
+      <h4>How to use</h4>
+
+      <p>Enter in each folder one package.json with the project name and description</p>
+      <p>In your www/index.php file:</p>
+<pre><code class="html">&#60;!-- in head -->
+&#60;link href="GP_folder/static/css.css" rel="stylesheet">
+&#60;script src="GP_folder/static/js.js"></script>
+</code></pre>
+
+<pre><code class="php">&#60;?php
+    // In body 
+    include_once("GP_folder/GP.php");
+    $GP = new GP();
+    $GP->show();
+?>
+</code></pre>
+
+    <p>Tara!</p>
+    <img src="images/articles/2-GProject.png" alt="A panel of project cards" />
+  </article>
+
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="yugioh">YuGiOhDuel</h3>
+          <p>A accessible field duel with animations using current web technologies</p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/YuGiOhDuel" title="View on GitHub"></a>
+        <div>
+      </header>
+    </article>
+
+
+    <article>
+      <header class="clearfix">
+        <div class="col-xs-10">
+          <h3 id="rocksmith">RockSmithCustomSongs</h3>
+          <p>A concept website to share links CDLC songs for Rocksmith </p>
+        </div>
+        <div class="col-xs-2">
+          <a class="logo" href="https://github.com/SrMouraSilva/RockSmithCustomSongs" title="View on GitHub"></a>
+        <div>
+      </header>
+    </article>
+
+
+    <article>
+      <header>
+        <h3 id="aboutMe">About Me</h3>
+        <p>We are all evolving ;)</p>
+      </header>
+      <h4>Visit!</h4>
+      <ul>
+          <li><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8180267J9">Lattes</a></li>
+          <li><a href="http://srmourasilva.github.io/">GitHub</a></li>
+          <li><a href="http://srmourasilva.carbonmade.com/">Carbonmade</a></li>
+          <li><a href="https://www.facebook.com/paulomateusmoura">Facebook</a></li>
+          <li><a href="http://instagram.com/SrMouraSilva">Instagram</a></li>
+          <li><a href="http://www.youtube.com/SrMouraSilva">Youtube</a></li>
+          <li><a href="https://twitter.com/SrMouraSilva">Twitter</a></li>
+      </ul>
+    </article>
+</section>
+
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Original theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+
+      <script src="javascripts/highlight.pack.js"></script>
+      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+      <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-44049595-1");
+            pageTracker._trackPageview();
+        } catch(err) {console.log(err)}
+      </script>
+      <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    </body>
+</html>

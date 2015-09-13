@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: "Lato";
+    background: black;
+    box-sizing: border-box !important;
+
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    font-size: 2em;
+}
+
+    h1 {
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 3.5em;
+        margin: 0;
+    }
+    h2 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+.page {
+    width: 98vw;
+    height: 100vh;
+    /*border-bottom: 1px dotted red;*/
+
+    scroll-snap-coordinate: top;
+}
+
+a {
+    color: azure;
+    text-decoration: underline;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* ===== PAGES ===== */
+
+.background-me {
+    background: url("../img/capa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    .background-me::before {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 98vw;
+        height: 100vh;
+
+        background-image: url("../img/capa.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+
+        -webkit-filter: blur(5px) opacity(.2);
+        filter: blur(5px) opacity(.2);
+    }
+
+#content {
+    width: 48vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0, .80);
+}
+
+    #content h2 {
+        visibility: hidden;
+        margin-bottom: 1.5vh;
+        padding-left: 1vh;
+    }
+
+    #content ul {
+        margin: 5vh 0 0 0;
+        font-size: 2.5em;
+        padding-left: 15vh;
+        list-style: none;
+    }
+
+#music {
+    background: url("../img/musica.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    #music h2 {
+        margin-bottom: 1.5vh;
+        padding-left: 1vh;
+        font-size: 5em;
+        -webkit-filter: blur(2px) opacity(.95);
+        filter: blur(2px) opacity(.95);
+    }
+
+#pre-education {
+    background: url("../img/ifce.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    -webkit-filter: blur(0.5px) opacity(.95);
+    filter: blur(0.5px) opacity(.95);
+}
+
+#education {
+    background: linear-gradient(to right, rgba(0,0,0,.8) 0%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.3) 100%);
+}
+
+    #education::before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100vh;
+
+        background: url("../img/ifce.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 125%;
+
+        -webkit-filter: blur(1.5px);
+        filter: blur(1.5px);
+    }
+
+    #education h2 {
+        text-align: center;
+    }
+
+    #education blockquote {
+        width: 60vw;
+    }
+
+#pos-education {
+    background: url("../img/lattes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65vh;
+    background-size: 100%;
+}
+
+#work {
+    text-shadow: 0 0 7px rgba(0,0,0,0.4);
+}
+    #work h2 {
+        text-align: center;
+    }
+
+    #work h3 {
+        text-align: center;
+    }
+
+    #work video {
+        /*z-index: -1;*/
+        position: absolute;
+
+        width: 100%;
+        height: 100vh;
+
+        background: rgba(44, 45, 51, 0.7);
+        -webkit-filter: opacity(.35);
+        filter: opacity(.35);
+        -webkit-backface-visibility: hidden;
+    }
+
+    #work p {
+        display: block;
+        font-size: 1em;
+
+        text-align: center;
+        margin-top: 65vh;
+        margin-bottom: 0;
+    }
+
+    #work .next {
+        margin-top: 0;
+    }
+
+    #work-details .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #work-details .container div {
+        width: calc(50% - 4em);
+        margin: 2em;
+    }
+
+/*============================================*/
+
+.next {
+    width: 25px;
+    margin: 0 auto;
+    margin-left: 44.5vw;
+
+    font-size: 2em;
+    font-weight: bold;
+
+    color: azure;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #333;
+}
+    .next:hover {
+        text-shadow: 2px 2px 3px #000;
+        text-decoration: none;
+    }
+
+.no-visible {
+    display: none;
+}
+
+.title-pink {
+    color: #ffbac2;
+}
+
+blockquote {
+    font-size: 1.25em;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+    blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+
+    blockquote p {
+      display: inline;
+      font-style: italic;
+    }
+
+    blockquote cite {
+        font-size: .7em;
+        font-style: normal;
+    }
+    blockquote cite:before {
+        content: "\2014 \2009";
+    }
